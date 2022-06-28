@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <form action=""> -->
+      <input id="movie_img" placeholder="Enter movie image" type="text" />
+      <input id="link" placeholder="Enter link to movie" type="text" />
+      <input id="movie_name" placeholder="Enter movie name " type="text" />
+      <input id="rating" placeholder="Enter rating " type="number" />
+      <input id="synopsis" placeholder="Enter synopsis" type="text" />
+      <input oninput="showMovieByName()" id="searchMovies" placeholder="search" type="search">
+      <button id="clickShow">CLICK</button>
+      <div id="loading"></div>
+      <div id="print_search"></div>
+    <!-- </form> -->
+    <button onclick="userInput()">add movie</button>
+    <button onclick="printMoviesName()">show movie</button>
+    <h3 id="movie_name"></h3>
+    <script src="main.js"></script>
+  </body>
+</html>
